@@ -1,4 +1,4 @@
-### R Reusable Codes 
+## R Reusable Codes 
 This repository is to access resusable R codes(packages) for data science.
 
 How to install?
@@ -7,8 +7,8 @@ Use the devtools packages which provides utitlities to install packages from git
 Examplae
 library(devtools)
 
-# sqlDBConnection Package
+### sqlDBConnection Package
 install_github("ketul14/RCodes/sqlDBConnection")
 
-# dataPreprocessing Package
+### dataPreprocessing Package
 install_github("ketul14/RCodes/dataPreprocessing")
