@@ -1,4 +1,4 @@
-## R Reusable Codes 
+## R Codes 
 This repository is to access resusable R codes(packages) for data science.
 
 How to install?
