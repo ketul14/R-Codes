@@ -167,17 +167,3 @@ removeHighlyCorrCols <- function(df, cols, cutoff_perc= 0.9, plot = TRUE){
 # 3. Model Planning
 ###############################################################
 
-#--------------------------------------------------------------
-# 1.4 Split Training and Test set
-#--------------------------------------------------------------
-splitTrain <- function(df, split_perc = 0.8){
-  require(dtplyr)
-  # Split data
-  df_train <- df %>% 
-    dtplyr::group_by(Defaulter) %>% 
-    sample_frac(split_perc) %>% 
-    ungroup()
-  
-  return(df_train)
-  
-}
