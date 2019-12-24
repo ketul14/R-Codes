@@ -14,12 +14,10 @@
 #'
 #' @export
 
-
-require(mssqlR)
-require(RODBC)
-
 # Function to connect and execute sql query
 getSQLQueryResult <- function(database, host, query){
+    require(mssqlR)
+    require(RODBC)
     # Establish a secure connection
     connection = paste("Driver={SQL Server Native Client 11.0};
                         server=", host, ";
