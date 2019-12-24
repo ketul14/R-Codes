@@ -19,10 +19,10 @@ require(mssqlR)
 require(RODBC)
 
 # Function to connect and execute sql query
-getSQLQueryResult <- function(database, query){
+getSQLQueryResult <- function(database, host, query){
     # Establish a secure connection
     connection = paste("Driver={SQL Server Native Client 11.0};
-                        server= <Server Host IP>;
+                        server=", host, ";
                         database=", database, ";
                         trusted_connection=yes;", sep = "")
     conn <- odbcDriverConnect(connection=connection)
