@@ -15,8 +15,8 @@
 #' @export
 
 
-library(mssqlR)
-library(RODBC)
+require(mssqlR)
+require(RODBC)
 
 # Function to connect and execute sql query
 getSQLQueryResult <- function(database, query){
